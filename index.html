@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Revendo · Tes clients achètent une fois. On les fait racheter.</title>
-  <meta name="description" content="Revendo fait racheter les clients des marques canadiennes de produits qui se vident : courriels automatiques en français et en anglais, installés en 7 jours, à prix fixe.">
+  <title>Revendo | Courriels de rachat pour marques Shopify canadiennes</title>
+  <meta name="description" content="Revendo installe les courriels automatiques qui font racheter tes clients au moment où ton produit se vide. En français et en anglais, en 7 jours, à prix fixe.">
   <!-- BROUILLON : retirer cette ligne au lancement pour que Google indexe la page -->
   <meta name="robots" content="noindex">
   <link rel="canonical" href="https://revendo.ca/">
@@ -16,13 +16,11 @@
   <meta property="og:url" content="https://revendo.ca/">
   <meta property="og:locale" content="fr_CA">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#14261F">
+  <meta name="theme-color" content="#F4F1EA">
   <link rel="icon" href="/assets/img/favicon.ico" sizes="any">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="/assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
@@ -32,138 +30,128 @@
 
 <header class="entete">
   <div class="conteneur">
-    <a class="logo" href="/" aria-label="Revendo, accueil"><img src="/assets/img/revendo-logo-vert.svg" alt="Revendo" width="120" height="32"></a>
-    <nav>
-      <a class="langue" href="/en/" hreflang="en-CA" lang="en">English</a>
-      <a class="bouton petit" href="#reserver">Réserver un appel</a>
-    </nav>
+    <a class="logo" href="/"><img src="/assets/img/revendo-logo-vert.svg" alt="Revendo" width="98" height="26"></a>
+    <a class="langue" href="/en/" hreflang="en-CA" lang="en">English</a>
   </div>
 </header>
 
 <main>
 
-  <!-- 1. Titre qui dit le résultat -->
+  <!-- Titre qui dit le résultat -->
   <section class="heros">
     <div class="conteneur">
-      <span class="surtitre">Pour les marques canadiennes de produits qui se vident</span>
-      <h1>Tes clients achètent une fois. <em>On les fait racheter.</em></h1>
-      <p class="sous-titre">Des courriels automatiques en français et en anglais qui ramènent tes clients au moment où ton produit se vide. Installés en 7 jours, à prix fixe.</p>
-      <a class="bouton" href="#reserver">Réserver un appel de 20 minutes <span class="fleche" aria-hidden="true">→</span></a>
-      <ul class="garanties">
-        <li>Prix fixe, pas de contrat mensuel</li>
-        <li>Installé en 7 jours</li>
-        <li>Français et anglais</li>
-        <li>Conforme à la loi anti-pourriel (LCAP)</li>
-      </ul>
+      <div>
+        <h1>Tes clients achètent une fois. <span>On les fait racheter.</span></h1>
+        <p class="mene">Pour les marques canadiennes de soins, de café, de suppléments et de produits pour animaux : des courriels automatiques en français et en anglais qui ramènent tes clients au moment où ton produit se vide. Installés en 7 jours, à prix fixe.</p>
+        <a class="bouton" href="#reserver">Réserver un appel de 20 minutes</a>
+        <ul class="faits">
+          <li>Prix fixe</li><li>Livré en 7 jours</li><li>Français et anglais</li><li>Pas de contrat mensuel</li>
+        </ul>
+      </div>
+      <figure>
+        <div class="courriel" aria-label="Exemple de courriel de rappel de rachat">
+          <div class="courriel-tete">
+            <strong>Maison Exemple</strong><br>
+            Ton sérum tire à sa fin ?
+          </div>
+          <div class="courriel-corps">
+            <div class="marque">Maison Exemple</div>
+            <p>Bonjour Julie,</p>
+            <p>Ça fait environ 30 jours que tu as reçu ton sérum. Si le flacon tire à sa fin, tu peux le recommander en deux clics.</p>
+            <span class="faux-bouton">Racheter mon sérum</span>
+          </div>
+        </div>
+        <figcaption class="legende">Exemple de rappel de rachat, pour une marque fictive.</figcaption>
+      </figure>
     </div>
   </section>
 
-  <!-- 2. Preuve (à remplacer : on n'invente rien) -->
+  <!-- Preuve : à remplir avec une vraie preuve seulement -->
   <div class="preuve">
     <div class="conteneur">
-      <div class="preuve-boite">
-        <strong>[PREUVE À AJOUTER]</strong>
-        <span>Ici : le témoignage d'un client fondateur, ou une capture de la démo (les courriels montés pour une boutique fictive de café ou de soins). Ne rien publier ici tant qu'on n'a pas une vraie preuve.</span>
-      </div>
+      <p class="attente todo">[PREUVE À AJOUTER] Le témoignage d'un client fondateur, ou des captures de la démo complète. Ne rien publier ici tant qu'on n'a pas une vraie preuve.</p>
     </div>
   </div>
 
-  <!-- 3. Avant / après -->
-  <section class="sombre" id="avant-apres">
+  <!-- Avant / après -->
+  <section id="probleme">
     <div class="conteneur">
-      <span class="surtitre">Le problème</span>
       <h2>Ta pub paie le premier achat. Ton profit est dans le deuxième.</h2>
-      <p class="intro">Chaque nouveau client te coûte de la pub. S'il ne revient jamais, tu repaies pour le ramener, ou il rachète ailleurs.</p>
-      <div class="comparaison">
-        <div class="carte-ac avant">
-          <h3><span class="etiquette">Aujourd'hui</span></h3>
+      <p class="mene">Chaque nouveau client te coûte de la pub. S'il ne revient pas, tu repaies pour le ramener, ou il rachète ailleurs.</p>
+      <div class="deux-col">
+        <div class="avant">
+          <h3>Aujourd'hui</h3>
           <ol>
             <li>Tu paies la pub pour trouver un client.</li>
-            <li>Il achète une fois. Il reçoit un « merci pour ta commande », puis plus rien.</li>
-            <li>Son produit se vide. Il a oublié ta marque, ou il rachète sur Amazon.</li>
+            <li>Il achète une fois. Il reçoit sa confirmation de commande, puis plus rien.</li>
+            <li>Son produit se vide. Il a oublié ta marque, ou il rachète ailleurs.</li>
             <li>Tu repaies la pub pour le ramener.</li>
           </ol>
         </div>
-        <div class="carte-ac apres">
-          <h3><span class="etiquette">Avec Revendo</span></h3>
+        <div class="apres">
+          <h3>Avec Revendo</h3>
           <ol>
-            <li>Après la livraison, il reçoit un merci et des conseils pour bien utiliser ton produit.</li>
+            <li>Après la livraison, il reçoit un merci et des conseils d'utilisation.</li>
             <li>On lui demande son avis pendant qu'il est content.</li>
-            <li>Au moment où son produit se vide, il reçoit un rappel pour racheter.</li>
-            <li>Tout ça dans sa langue, en français ou en anglais. La 2e commande arrive sans repayer de pub.</li>
+            <li>Quand son produit se vide, il reçoit un rappel pour racheter.</li>
+            <li>Tout ça dans sa langue. La 2e commande arrive sans repayer de pub.</li>
           </ol>
         </div>
       </div>
-      <p class="choc">Paie ta pub une fois. <span>Vends deux fois.</span></p>
+      <p class="phrase">Paie ta pub une fois. Vends deux fois.</p>
     </div>
   </section>
 
-  <!-- 4. Bénéfices -->
+  <!-- Bénéfices -->
   <section id="pourquoi">
     <div class="conteneur">
-      <span class="surtitre">Pourquoi Revendo</span>
       <h2>On ne fait qu'une chose : la 2e commande.</h2>
-      <p class="intro">Pas « du marketing par courriel » pour tout le monde. Juste le rachat, pour les marques dont les produits se vident : soins, café et thé, suppléments, animaux, produits ménagers.</p>
-      <div class="grille-3">
-        <div class="benefice">
-          <div class="pastille">1</div>
+      <p class="mene">Pas du marketing par courriel pour tout le monde. Juste le rachat, pour les marques dont les produits se vident.</p>
+      <div class="liste-2">
+        <div>
           <h3>Au bon moment</h3>
           <p>Le rappel part quand ton produit se vide, pas au hasard. Dans le forfait Complet, chaque produit a son propre délai.</p>
         </div>
-        <div class="benefice">
-          <div class="pastille">2</div>
-          <h3>Dans sa langue</h3>
-          <p>Rédigé en vrai français d'ici et en anglais, pas traduit par un logiciel. Chaque client reçoit sa langue.</p>
+        <div>
+          <h3>Dans la langue du client</h3>
+          <p>Chaque texte est rédigé en français et en anglais par une personne, pas traduit automatiquement. Chaque client reçoit sa langue.</p>
         </div>
-        <div class="benefice">
-          <div class="pastille">3</div>
-          <h3>En règle</h3>
-          <p>Mentions de la loi anti-pourriel (LCAP) vérifiées sur chaque courriel, selon notre liste de contrôle.</p>
+        <div>
+          <h3>En 7 jours, à prix fixe</h3>
+          <p>Tu connais le prix avant de commencer. Le chrono part quand on reçoit tes accès.</p>
         </div>
-        <div class="benefice">
-          <div class="pastille">4</div>
-          <h3>En 7 jours</h3>
-          <p>Le chrono part quand on reçoit tes accès. Pas de projet qui traîne trois mois.</p>
-        </div>
-        <div class="benefice">
-          <div class="pastille">5</div>
-          <h3>À prix fixe</h3>
-          <p>Tu sais ce que tu paies avant de commencer. Pas de contrat mensuel, pas de frais cachés.</p>
-        </div>
-        <div class="benefice">
-          <div class="pastille">6</div>
-          <h3>Ça reste à toi</h3>
-          <p>Tout est installé dans ton compte Klaviyo. Ça continue de rouler après notre départ.</p>
+        <div>
+          <h3>Installé chez toi</h3>
+          <p>Tout est monté dans ton compte Klaviyo, avec les mentions exigées par la loi anti-pourriel (LCAP). Ça continue de rouler après la livraison.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 5. Comment ça marche -->
-  <section id="etapes" style="padding-top:0">
+  <!-- Comment ça marche -->
+  <section id="etapes">
     <div class="conteneur">
-      <span class="surtitre">Comment ça marche</span>
-      <h2>Quatre étapes, sept jours.</h2>
+      <h2>Comment ça marche</h2>
       <ol class="etapes">
         <li><h3>On s'appelle</h3><p>20 minutes pour voir ce qui arrive aujourd'hui après un achat chez toi, et choisir le bon forfait.</p></li>
-        <li><h3>Tu nous donnes les accès</h3><p>Un accès à Klaviyo, un accès collaborateur à Shopify et un court questionnaire. Le chrono part là.</p></li>
+        <li><h3>Tu donnes les accès</h3><p>Un accès à Klaviyo, un accès collaborateur à Shopify et un court questionnaire. Le chrono part là.</p></li>
         <li><h3>On rédige et on installe</h3><p>Textes en français et en anglais, aux couleurs de ta boutique, testés sur cellulaire et sur ordi.</p></li>
-        <li><h3>Tu approuves, on active</h3><p>Tu relis, on corrige, on active. Tu reçois tout ce qui a été installé.</p></li>
+        <li><h3>Tu approuves, on active</h3><p>Tu relis, on corrige, on active. Tu sais exactement ce qui a été installé.</p></li>
       </ol>
-      <p class="note-delai">Bon à savoir : les premiers rachats arrivent quand ton produit se vide, souvent 30 à 60 jours après l'achat. Pas la semaine suivante.</p>
+      <p class="note">À savoir : les premiers rachats arrivent quand ton produit se vide, souvent 30 à 60 jours après l'achat.</p>
     </div>
   </section>
 
-  <!-- 6. Ce que tu reçois + prix -->
-  <section class="forfaits-sec" id="forfaits">
+  <!-- Ce que tu reçois et prix -->
+  <section id="forfaits">
     <div class="conteneur">
-      <span class="surtitre">Forfaits</span>
-      <h2>Trois forfaits. Un prix fixe.</h2>
-      <p class="intro">Le rachat et le français-anglais sont dans les trois.</p>
+      <h2>Trois forfaits, prix fixes</h2>
+      <p class="mene">Le rachat et le français-anglais sont dans les trois.</p>
       <div class="forfaits">
         <article class="forfait">
+          <div class="reco-mot"></div>
           <h3>Départ</h3>
-          <div class="prix">450 $<small> CA</small></div>
+          <div class="prix">450 $ <small>CA</small></div>
           <p class="resultat">Fais revenir tes clients pour une 2e commande.</p>
           <ul>
             <li>3 courriels de rachat après le premier achat, en français et en anglais</li>
@@ -176,10 +164,10 @@
           </ul>
           <a class="bouton" href="#reserver">Réserver un appel</a>
         </article>
-        <article class="forfait vedette">
-          <span class="badge">Le plus populaire</span>
+        <article class="forfait reco">
+          <div class="reco-mot">Celui qu'on recommande</div>
           <h3>Essentiel</h3>
-          <div class="prix">990 $<small> CA</small></div>
+          <div class="prix">990 $ <small>CA</small></div>
           <p class="resultat">Plus de premières commandes, et des clients qui reviennent.</p>
           <ul>
             <li>10 courriels automatiques, en français et en anglais</li>
@@ -194,8 +182,9 @@
           <a class="bouton" href="#reserver">Réserver un appel</a>
         </article>
         <article class="forfait">
+          <div class="reco-mot"></div>
           <h3>Complet</h3>
-          <div class="prix">2 490 $<small> CA</small></div>
+          <div class="prix">2 490 $ <small>CA</small></div>
           <p class="resultat">Un système de rachat complet, réglé produit par produit.</p>
           <ul>
             <li>17 courriels automatiques, en français et en anglais</li>
@@ -210,68 +199,74 @@
           <a class="bouton" href="#reserver">Réserver un appel</a>
         </article>
       </div>
-      <p class="mentions-prix">Prix fixes en dollars canadiens, taxes en sus. Le délai de 7 jours commence à la réception de tes accès Klaviyo et Shopify et du questionnaire. L'abonnement Klaviyo reste payé par ta boutique.</p>
-      <div class="garantie">
-        <div class="rond" aria-hidden="true"></div>
-        <p><strong>Garantie de délai.</strong> Livré en 7 jours après réception de tes accès, sinon on te rembourse <span class="todo">[20 %, à confirmer]</span> du prix. On garantit le délai, pas un montant de ventes : personne d'honnête ne peut te promettre ça.</p>
+      <div class="fondateurs">
+        <p><strong>3 places de clients fondateurs.</strong> Pour nos trois premiers clients de l'Essentiel, le rapport à 60 jours du Complet est offert, en échange d'un témoignage et de l'accès aux résultats pour une étude de cas. <span class="todo">[Places restantes : 3]</span></p>
+      </div>
+      <p class="petit">Prix en dollars canadiens, taxes en sus. Le délai de 7 jours commence à la réception de tes accès Klaviyo et Shopify et du questionnaire. L'abonnement Klaviyo reste à la charge de ta boutique. Garantie de délai : si on ne livre pas dans les 7 jours, on te rembourse <span class="todo">[20 %, à confirmer]</span> du prix. On garantit le délai, pas un montant de ventes.</p>
+    </div>
+  </section>
+
+  <!-- Qui est derrière (confiance) -->
+  <section class="qui" id="qui">
+    <div class="conteneur">
+      <div class="photo todo">[Ta photo]</div>
+      <div>
+        <h2>Qui est derrière Revendo</h2>
+        <p class="todo">[3 phrases, en tes mots : qui tu es, pourquoi tu as lancé Revendo, et pourquoi le rachat des marques canadiennes.]</p>
+        <p>Je dirige chaque projet du début à la fin. Je relis chaque courriel avant la livraison, et c'est moi que tu appelles s'il y a quelque chose.</p>
+        <p class="signature"><span class="todo">[Loïk Nom de famille]</span>, fondateur</p>
       </div>
     </div>
   </section>
 
-  <!-- 7. FAQ -->
+  <!-- FAQ -->
   <section id="faq">
     <div class="conteneur">
-      <span class="surtitre">Questions</span>
-      <h2>Ce qu'on nous demande.</h2>
+      <h2>Questions fréquentes</h2>
       <div class="faq">
         <details>
           <summary>Ça va me rapporter combien ?</summary>
-          <p>On ne promet pas de chiffre : ça dépend de ton produit, de ta liste et de ton trafic. Ce qu'on peut faire avant l'appel, c'est te montrer ce qui arrive aujourd'hui après un achat chez toi. Et dans le forfait Complet, tu reçois un rapport à 60 jours avec les ventes que Klaviyo attribue à ces courriels.</p>
+          <p>On ne promet pas de chiffre : ça dépend de ton produit, de ta liste et de ton trafic. Avant l'appel, on peut te montrer ce qui arrive aujourd'hui après un achat chez toi. Avec le forfait Complet, tu reçois un rapport à 60 jours avec les ventes que Klaviyo attribue à ces courriels.</p>
         </details>
         <details>
           <summary>Pourquoi les résultats prennent du temps ?</summary>
-          <p>Parce que le rappel part au moment où ton produit se vide. Si un pot dure 30 jours, le premier rachat arrive autour de 30 jours après l'achat. Les courriels de bienvenue et de panier abandonné, eux, travaillent dès la première semaine.</p>
+          <p>Parce que le rappel part au moment où ton produit se vide. Si un pot dure 30 jours, le premier rachat arrive autour de 30 jours après l'achat. Les courriels de bienvenue et de panier abandonné, eux, commencent à rouler dès qu'ils sont activés.</p>
         </details>
         <details>
           <summary>J'ai déjà une appli de fidélité.</summary>
-          <p>Tant mieux. Les points ne servent à rien si personne ne rappelle au client de revenir. Nos courriels font travailler ton appli.</p>
+          <p>Les points servent peu si personne ne rappelle au client de revenir. Nos courriels peuvent mettre ton programme de l'avant.</p>
         </details>
         <details>
           <summary>Je pourrais le faire moi-même.</summary>
-          <p>Oui. Ça fait combien de mois que c'est sur ta liste ? Nous, c'est fait en 7 jours, dans les deux langues, testé, et en règle.</p>
+          <p>Oui. Ça fait combien de temps que c'est sur ta liste ? Nous, c'est livré en 7 jours, dans les deux langues, testé.</p>
         </details>
         <details>
           <summary>Il me faut Klaviyo ?</summary>
-          <p>Oui, on travaille dans ton compte Klaviyo branché à Shopify. Si tu n'en as pas encore, on en parle à l'appel.</p>
+          <p>Oui. On travaille dans ton compte Klaviyo branché à Shopify. Si tu n'en as pas encore, on en parle à l'appel.</p>
         </details>
         <details>
-          <summary>Qu'est-ce qui arrive avec mes données clients ?</summary>
-          <p>On travaille avec un accès utilisateur séparé, jamais avec tes mots de passe. L'accès est retiré à la fin du projet, et on signe une entente de confidentialité.</p>
+          <summary>Qu'est-ce qui arrive avec les données de mes clients ?</summary>
+          <p>On travaille avec un accès utilisateur créé pour nous, jamais avec tes mots de passe. On signe une entente de confidentialité, et l'accès est retiré à la fin du projet.</p>
         </details>
         <details>
-          <summary>Pourquoi en français et en anglais ?</summary>
-          <p>Parce que tes clients sont partout au Canada. Au Québec, on s'attend à être servi en français, et ailleurs au Canada, en anglais. Chaque client reçoit le courriel dans sa langue, rédigé pour lui, pas traduit.</p>
-        </details>
-        <details>
-          <summary>Combien de temps ça me prend, à moi ?</summary>
-          <p>Peu : l'appel de 20 minutes, le questionnaire et la relecture. On s'occupe du reste.</p>
+          <summary>Est-ce que mes courriels vont respecter la loi anti-pourriel ?</summary>
+          <p>Chaque courriel inclut les mentions exigées par la LCAP : nom de ton entreprise, adresse postale, moyen de te joindre et lien de désabonnement. C'est toi qui restes responsable du consentement de ta liste. On te signale tout ce qui nous semble douteux.</p>
         </details>
         <details>
           <summary>Vous faites aussi les infolettres, les SMS ou la pub ?</summary>
-          <p>Non. On ne fait que les courriels automatiques qui font racheter tes clients. C'est notre spécialité, et c'est pour ça qu'on le fait bien.</p>
+          <p>Non. On ne fait que les courriels automatiques qui font racheter tes clients.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <!-- 8. Un seul bouton : réserver un appel -->
-  <section class="final sombre" id="reserver">
+  <!-- Un seul bouton -->
+  <section class="final" id="reserver">
     <div class="conteneur">
-      <span class="surtitre">Prochaine étape</span>
       <h2>Voyons ce qui arrive après un achat chez toi.</h2>
-      <p class="intro">20 minutes, sans engagement. On regarde ta boutique ensemble et on te dit franchement si on peut t'aider.</p>
-      <a class="bouton" href="#reserver" data-reservation>Réserver un appel de 20 minutes <span class="fleche" aria-hidden="true">→</span></a>
-      <p class="todo-bloc">[À BRANCHER] Mettre le lien de réservation (Cal.com ou Calendly) dans <code>RESERVATION</code> au bas de cette page.</p>
+      <p class="mene">20 minutes, sans engagement. On regarde ta boutique ensemble et on te dit franchement si on peut t'aider.</p>
+      <a class="bouton" href="#reserver">Réserver un appel de 20 minutes</a>
+      <span class="sous-bouton"><span class="todo">[À BRANCHER : lien Cal.com ou Calendly dans RESERVATION, au bas du code de cette page]</span></span>
     </div>
   </section>
 
@@ -280,21 +275,22 @@
 <footer class="pied">
   <div class="conteneur">
     <div>
-      <img src="/assets/img/revendo-logo-creme.svg" alt="Revendo" width="100" height="27">
-      <p>Courriels automatiques de rachat pour les marques Shopify canadiennes.</p>
+      <img src="/assets/img/revendo-logo-vert.svg" alt="Revendo" width="75" height="20">
+      <p>Revendo est le nom d'entreprise de <span class="todo">[ton nom légal]</span>, <span class="todo">[NEQ]</span>.</p>
+      <p><span class="todo">[adresse postale]</span></p>
+      <p><span class="todo">[courriel de contact]</span></p>
     </div>
     <div>
-      <p>Revendo · <span class="todo">[adresse postale]</span></p>
-      <p><span class="todo">[courriel de contact]</span> · revendo.ca</p>
-      <p><span class="todo">[lien : politique de confidentialité]</span></p>
+      <p><a href="/confidentialite/">Politique de confidentialité</a></p>
+      <p>Ce site n'utilise aucun témoin (cookie) ni outil de suivi.</p>
+      <p>Shopify et Klaviyo sont des marques de leurs propriétaires respectifs. Revendo n'est pas affilié à ces entreprises.</p>
       <p>© 2026 Revendo</p>
     </div>
   </div>
 </footer>
 
 <script>
-  // Un seul endroit pour le lien de réservation. Quand il est rempli,
-  // tous les boutons « Réserver un appel » y mènent directement.
+  // Lien de réservation : un seul endroit à remplir.
   const RESERVATION = ""; // ex. "https://cal.com/..." (à créer)
   if (RESERVATION) {
     document.querySelectorAll('a[href="#reserver"]').forEach(a => {
