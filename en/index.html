@@ -314,7 +314,7 @@
       <h2>Let's see what happens after someone buys from you.</h2>
       <p class="mene">20 minutes, no commitment. We look at your store together and tell you honestly whether we can help.</p>
       <a class="bouton" href="#book">Book a 20-minute call</a>
-      <span class="sous-bouton"><span class="todo">[TO CONNECT: Cal.com or Calendly link in BOOKING, at the bottom of this page's code]</span></span>
+      <span class="sous-bouton">Pick a time that works for you in my calendar.</span>
     </div>
   </section>
 
@@ -338,7 +338,7 @@
 
 <script>
   // Booking link: one place to fill in.
-  const BOOKING = ""; // e.g. "https://cal.com/..." (to create)
+  const BOOKING = "https://cal.com/revendo/appel";
   if (BOOKING) {
     document.querySelectorAll('a[href="#book"]').forEach(a => {
       a.href = BOOKING; a.target = "_blank"; a.rel = "noopener";
