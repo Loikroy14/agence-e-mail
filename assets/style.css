@@ -185,3 +185,16 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--vert); outline
   .forfait.reco { padding: 24px 16px 28px; margin: 0 -16px; }
   .bouton { display: block; text-align: center; }
 }
+
+/* Pour qui */
+.categories { font-family: var(--titre); font-size: clamp(1.1rem, 2vw, 1.35rem); margin: 6px 0 0; max-width: 820px; }
+.categories span { color: var(--terra); padding: 0 .3em; }
+.pour-qui { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; margin-top: 44px; }
+.pour-qui h3 { padding-bottom: 12px; border-bottom: 1px solid var(--vert); }
+.paroles, .coches { list-style: none; margin: 0 0 28px; padding: 0; }
+.paroles li { font-family: var(--titre); font-size: 1.2rem; line-height: 1.35; padding: 12px 0; border-bottom: 1px solid var(--ligne); }
+.coches li { padding: 10px 0 10px 1.4em; border-bottom: 1px solid var(--ligne); position: relative; }
+.coches li::before { content: ""; position: absolute; left: 0; top: 1.05em; width: .6em; height: 2px; background: var(--terra); }
+.pas-pour { font-size: 1rem; border-bottom-color: var(--ligne) !important; color: var(--doux); }
+.pour-qui p { color: var(--doux); }
+@media (max-width: 900px) { .pour-qui { grid-template-columns: 1fr; gap: 28px; } }

@@ -6,7 +6,8 @@ Site d'une page de Revendo, en français (`/`) et en anglais (`/en/`). HTML et C
 
 Une page, une promesse, un seul bouton (réserver un appel) :
 
-1. Titre qui dit le résultat
+1. Titre qui dit le résultat, avec la cible nommée au-dessus
+1b. Pour qui : catégories, ses mots à lui, « c'est pour toi si » et « pas pour toi si »
 2. Ce qu'on installe : les 3 courriels de rachat (preuve concrète, marque fictive)
 3. Avant / après
 4. Pourquoi nous
