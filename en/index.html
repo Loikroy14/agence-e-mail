@@ -20,7 +20,7 @@
   <link rel="icon" href="/assets/img/favicon.ico" sizes="any">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-  <link rel="preload" href="/assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
@@ -30,7 +30,8 @@
 
 <header class="entete">
   <div class="conteneur">
-    <a class="logo" href="/en/"><img src="/assets/img/revendo-logo-vert.svg" alt="Revendo" width="98" height="26"></a>
+    <a class="logo" href="/en/"><img src="/assets/img/revendo-logo-vert.svg" alt="Revendo" width="118" height="30"></a>
+    <a class="lien-appel" href="#book">Book a call</a>
     <a class="langue" href="/" hreflang="fr-CA" lang="fr">Français</a>
   </div>
 </header>
@@ -39,37 +40,61 @@
 
   <section class="heros">
     <div class="conteneur">
-      <div>
-        <h1>Your customers buy once. <span>We bring them back.</span></h1>
-        <p class="mene">For Canadian skincare, coffee, supplement and pet brands: automated emails in English and French that bring your customers back right when your product runs out. Set up in 7 days, at a fixed price.</p>
-        <a class="bouton" href="#book">Book a 20-minute call</a>
-        <ul class="faits">
-          <li>Fixed price</li><li>Delivered in 7 days</li><li>English and French</li><li>No monthly contract</li>
-        </ul>
-      </div>
-      <figure>
-        <div class="courriel" aria-label="Example of a repeat-order reminder email">
-          <div class="courriel-tete">
-            <strong>Example Co.</strong><br>
-            Running low on your serum?
-          </div>
-          <div class="courriel-corps">
-            <div class="marque">Example Co.</div>
-            <p>Hi Julie,</p>
-            <p>It's been about 30 days since your serum arrived. If the bottle is running low, you can reorder in two clicks.</p>
-            <span class="faux-bouton">Reorder my serum</span>
-          </div>
-        </div>
-        <figcaption class="legende">Example of a repeat-order reminder, for a fictional brand.</figcaption>
-      </figure>
+      <h1>Your customers buy once. <em>We bring them back.</em></h1>
+      <p class="mene">For Canadian skincare, coffee, supplement and pet brands: automated emails in English and French that bring your customers back right when your product runs out. Set up in 7 days, at a fixed price.</p>
+      <a class="bouton" href="#book">Book a 20-minute call</a>
+      <ul class="faits">
+        <li>Fixed price</li><li>Delivered in 7 days</li><li>English and French</li><li>No monthly contract</li>
+      </ul>
     </div>
   </section>
 
-  <div class="preuve">
+  <!-- Proof: what we deliver. At launch, add a founding client's testimonial here (real only). -->
+  <section id="examples">
     <div class="conteneur">
-      <p class="attente todo">[PROOF TO ADD] A founding client's testimonial, or screenshots of the full demo. Publish nothing here until we have real proof.</p>
+      <p class="etiquette">What we set up</p>
+      <h2>Three emails, sent at the right time.</h2>
+      <p class="mene">Here is the Starter repeat-order series, as your customer receives it.</p>
+      <div class="exemples">
+        <div class="exemple">
+          <p class="quand"><strong>Day 3</strong>, after delivery</p>
+          <div class="courriel">
+            <div class="courriel-tete"><b>Atelier Sève</b>Your serum has arrived. Here's how to use it.</div>
+            <div class="courriel-corps">
+              <div class="marque">Atelier Sève</div>
+              <p>Hi Julie,</p>
+              <p>Thanks for your order. Two drops at night, on clean skin, is all you need. The bottle lasts about a month.</p>
+            </div>
+          </div>
+        </div>
+        <div class="exemple">
+          <p class="quand"><strong>Day 10</strong>, while they're happy</p>
+          <div class="courriel">
+            <div class="courriel-tete"><b>Atelier Sève</b>A quick question about your serum</div>
+            <div class="courriel-corps">
+              <div class="marque">Atelier Sève</div>
+              <p>Hi Julie,</p>
+              <p>It's been a week. What do you think? Your review helps other customers choose.</p>
+              <span class="faux-bouton">Leave a review</span>
+            </div>
+          </div>
+        </div>
+        <div class="exemple">
+          <p class="quand"><strong>Day 28</strong>, when the product runs out</p>
+          <div class="courriel">
+            <div class="courriel-tete"><b>Atelier Sève</b>Running low on your serum?</div>
+            <div class="courriel-corps">
+              <div class="marque">Atelier Sève</div>
+              <p>Hi Julie,</p>
+              <p>If your bottle is almost empty, you can reorder in two clicks. It arrives before you run out.</p>
+              <span class="faux-bouton">Reorder my serum</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="note">Examples for a fictional brand. Every email also exists in French, and each customer gets their own language.</p>
     </div>
-  </div>
+  </section>
 
   <section id="problem">
     <div class="conteneur">
@@ -266,7 +291,7 @@
 <footer class="pied">
   <div class="conteneur">
     <div>
-      <img src="/assets/img/revendo-logo-vert.svg" alt="Revendo" width="75" height="20">
+      <img src="/assets/img/revendo-logo-vert.svg" alt="Revendo" width="87" height="22">
       <p>Revendo is the business name of <span class="todo">[your legal name]</span>, <span class="todo">[Quebec enterprise number]</span>.</p>
       <p><span class="todo">[mailing address]</span></p>
       <p><span class="todo">[contact email]</span></p>

@@ -1,3 +1,4 @@
-Bricolage Grotesque (Mathieu Triay) et Inter (Rasmus Andersson) sont distribuées
+Fraunces (Undercase Type) et Inter (Rasmus Andersson) sont distribuées
 sous la SIL Open Font License, version 1.1 : https://openfontlicense.org
-Fichiers obtenus de Google Fonts, sous-ensemble latin.
+Fraunces : paquet @fontsource-variable/fraunces, sous-ensemble latin.
+Inter : Google Fonts, sous-ensemble latin.

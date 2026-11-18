@@ -20,7 +20,7 @@
   <link rel="icon" href="/assets/img/favicon.ico" sizes="any">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-  <link rel="preload" href="/assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
@@ -30,50 +30,75 @@
 
 <header class="entete">
   <div class="conteneur">
-    <a class="logo" href="/"><img src="/assets/img/revendo-logo-vert.svg" alt="Revendo" width="98" height="26"></a>
+    <a class="logo" href="/"><img src="/assets/img/revendo-logo-vert.svg" alt="Revendo" width="118" height="30"></a>
+    <a class="lien-appel" href="#reserver">Réserver un appel</a>
     <a class="langue" href="/en/" hreflang="en-CA" lang="en">English</a>
   </div>
 </header>
 
 <main>
 
-  <!-- Titre qui dit le résultat -->
+  <!-- 1. Titre qui dit le résultat, un seul bouton -->
   <section class="heros">
     <div class="conteneur">
-      <div>
-        <h1>Tes clients achètent une fois. <span>On les fait racheter.</span></h1>
-        <p class="mene">Pour les marques canadiennes de soins, de café, de suppléments et de produits pour animaux : des courriels automatiques en français et en anglais qui ramènent tes clients au moment où ton produit se vide. Installés en 7 jours, à prix fixe.</p>
-        <a class="bouton" href="#reserver">Réserver un appel de 20 minutes</a>
-        <ul class="faits">
-          <li>Prix fixe</li><li>Livré en 7 jours</li><li>Français et anglais</li><li>Pas de contrat mensuel</li>
-        </ul>
-      </div>
-      <figure>
-        <div class="courriel" aria-label="Exemple de courriel de rappel de rachat">
-          <div class="courriel-tete">
-            <strong>Maison Exemple</strong><br>
-            Ton sérum tire à sa fin ?
-          </div>
-          <div class="courriel-corps">
-            <div class="marque">Maison Exemple</div>
-            <p>Bonjour Julie,</p>
-            <p>Ça fait environ 30 jours que tu as reçu ton sérum. Si le flacon tire à sa fin, tu peux le recommander en deux clics.</p>
-            <span class="faux-bouton">Racheter mon sérum</span>
-          </div>
-        </div>
-        <figcaption class="legende">Exemple de rappel de rachat, pour une marque fictive.</figcaption>
-      </figure>
+      <h1>Tes clients achètent une fois. <em>On les fait racheter.</em></h1>
+      <p class="mene">Pour les marques canadiennes de soins, de café, de suppléments et de produits pour animaux : des courriels automatiques en français et en anglais qui ramènent tes clients au moment où ton produit se vide. Installés en 7 jours, à prix fixe.</p>
+      <a class="bouton" href="#reserver">Réserver un appel de 20 minutes</a>
+      <ul class="faits">
+        <li>Prix fixe</li><li>Livré en 7 jours</li><li>Français et anglais</li><li>Pas de contrat mensuel</li>
+      </ul>
     </div>
   </section>
 
-  <!-- Preuve : à remplir avec une vraie preuve seulement -->
-  <div class="preuve">
+  <!-- 2. Preuve : ce qu'on livre, concrètement.
+       Au lancement, ajouter ici le témoignage d'un client fondateur (vrai seulement). -->
+  <section id="exemples">
     <div class="conteneur">
-      <p class="attente todo">[PREUVE À AJOUTER] Le témoignage d'un client fondateur, ou des captures de la démo complète. Ne rien publier ici tant qu'on n'a pas une vraie preuve.</p>
+      <p class="etiquette">Ce qu'on installe</p>
+      <h2>Trois courriels, envoyés au bon moment.</h2>
+      <p class="mene">Voici la série de rachat du forfait Départ, telle que ton client la reçoit.</p>
+      <div class="exemples">
+        <div class="exemple">
+          <p class="quand"><strong>Jour 3</strong>, après la livraison</p>
+          <div class="courriel">
+            <div class="courriel-tete"><b>Atelier Sève</b>Ton sérum est arrivé. Voici comment l'utiliser.</div>
+            <div class="courriel-corps">
+              <div class="marque">Atelier Sève</div>
+              <p>Bonjour Julie,</p>
+              <p>Merci pour ta commande. Deux gouttes le soir, sur peau propre, suffisent. Le flacon dure environ un mois.</p>
+            </div>
+          </div>
+        </div>
+        <div class="exemple">
+          <p class="quand"><strong>Jour 10</strong>, pendant qu'il est content</p>
+          <div class="courriel">
+            <div class="courriel-tete"><b>Atelier Sève</b>Une question rapide sur ton sérum</div>
+            <div class="courriel-corps">
+              <div class="marque">Atelier Sève</div>
+              <p>Bonjour Julie,</p>
+              <p>Ça fait une semaine. Qu'est-ce que tu en penses ? Ton avis aide d'autres clientes à choisir.</p>
+              <span class="faux-bouton">Donner mon avis</span>
+            </div>
+          </div>
+        </div>
+        <div class="exemple">
+          <p class="quand"><strong>Jour 28</strong>, quand le produit se vide</p>
+          <div class="courriel">
+            <div class="courriel-tete"><b>Atelier Sève</b>Ton sérum tire à sa fin ?</div>
+            <div class="courriel-corps">
+              <div class="marque">Atelier Sève</div>
+              <p>Bonjour Julie,</p>
+              <p>Si ton flacon est presque vide, tu peux le recommander en deux clics. Il arrive avant que tu en manques.</p>
+              <span class="faux-bouton">Racheter mon sérum</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="note">Exemples pour une marque fictive. Chaque courriel existe aussi en anglais, et chaque client reçoit sa langue.</p>
     </div>
-  </div>
+  </section>
 
-  <!-- Avant / après -->
+<!-- 3. Avant / après -->
   <section id="probleme">
     <div class="conteneur">
       <h2>Ta pub paie le premier achat. Ton profit est dans le deuxième.</h2>
@@ -102,7 +127,7 @@
     </div>
   </section>
 
-  <!-- Bénéfices -->
+  <!-- 4. Pourquoi nous -->
   <section id="pourquoi">
     <div class="conteneur">
       <h2>On ne fait qu'une chose : la 2e commande.</h2>
@@ -128,7 +153,7 @@
     </div>
   </section>
 
-  <!-- Comment ça marche -->
+  <!-- 5. Comment ça marche -->
   <section id="etapes">
     <div class="conteneur">
       <h2>Comment ça marche</h2>
@@ -142,7 +167,7 @@
     </div>
   </section>
 
-  <!-- Ce que tu reçois et prix -->
+  <!-- 6. Ce que tu reçois et prix -->
   <section id="forfaits">
     <div class="conteneur">
       <h2>Trois forfaits, prix fixes</h2>
@@ -206,7 +231,7 @@
     </div>
   </section>
 
-  <!-- Qui est derrière (confiance) -->
+  <!-- 7. Qui est derrière -->
   <section class="qui" id="qui">
     <div class="conteneur">
       <div class="photo todo">[Ta photo]</div>
@@ -219,7 +244,7 @@
     </div>
   </section>
 
-  <!-- FAQ -->
+  <!-- 8. FAQ -->
   <section id="faq">
     <div class="conteneur">
       <h2>Questions fréquentes</h2>
@@ -260,7 +285,7 @@
     </div>
   </section>
 
-  <!-- Un seul bouton -->
+  <!-- 9. Le même bouton -->
   <section class="final" id="reserver">
     <div class="conteneur">
       <h2>Voyons ce qui arrive après un achat chez toi.</h2>
@@ -275,7 +300,7 @@
 <footer class="pied">
   <div class="conteneur">
     <div>
-      <img src="/assets/img/revendo-logo-vert.svg" alt="Revendo" width="75" height="20">
+      <img src="/assets/img/revendo-logo-vert.svg" alt="Revendo" width="87" height="22">
       <p>Revendo est le nom d'entreprise de <span class="todo">[ton nom légal]</span>, <span class="todo">[NEQ]</span>.</p>
       <p><span class="todo">[adresse postale]</span></p>
       <p><span class="todo">[courriel de contact]</span></p>
