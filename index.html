@@ -323,7 +323,7 @@
       <h2>Voyons ce qui arrive après un achat chez toi.</h2>
       <p class="mene">20 minutes, sans engagement. On regarde ta boutique ensemble et on te dit franchement si on peut t'aider.</p>
       <a class="bouton" href="#reserver">Réserver un appel de 20 minutes</a>
-      <span class="sous-bouton"><span class="todo">[À BRANCHER : lien Cal.com ou Calendly dans RESERVATION, au bas du code de cette page]</span></span>
+      <span class="sous-bouton">Tu choisis le moment qui te convient dans mon agenda.</span>
     </div>
   </section>
 
@@ -347,7 +347,7 @@
 
 <script>
   // Lien de réservation : un seul endroit à remplir.
-  const RESERVATION = ""; // ex. "https://cal.com/..." (à créer)
+  const RESERVATION = "https://cal.com/revendo/appel";
   if (RESERVATION) {
     document.querySelectorAll('a[href="#reserver"]').forEach(a => {
       a.href = RESERVATION; a.target = "_blank"; a.rel = "noopener";
