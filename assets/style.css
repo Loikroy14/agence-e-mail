@@ -130,7 +130,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--vert); outline
 .petit { font-size: .9rem; color: var(--doux); margin-top: 20px; max-width: 760px; }
 
 /* Qui est derrière */
-.qui .conteneur { display: grid; grid-template-columns: 220px 1fr; gap: 56px; align-items: start; }
+.qui .conteneur:has(.photo) { display: grid; grid-template-columns: 220px 1fr; gap: 56px; align-items: start; }
 .photo { aspect-ratio: 4 / 5; background: #E6E0D2; display: grid; place-items: center; text-align: center; font-size: .85rem; color: var(--doux); padding: 12px; }
 .qui p { max-width: 600px; }
 .signature { font-family: var(--titre); font-size: 1.15rem; margin-top: 8px; }
