@@ -8,11 +8,11 @@ Une page, une promesse, un seul bouton (réserver un appel) :
 
 1. Titre qui dit le résultat, avec la cible nommée au-dessus
 1b. Pour qui : catégories, ses mots à lui, « c'est pour toi si » et « pas pour toi si »
-2. Ce qu'on installe : les 3 courriels de rachat (preuve concrète, marque fictive)
+2. Ce qu'on met en place : la série de rachat (preuve concrète, marque fictive)
 3. Avant / après
-4. Pourquoi nous
-5. Comment ça marche
-6. Ce que tu reçois et prix
+4. Pourquoi nous (au bon moment, bilingue, mesure honnête, géré chaque mois)
+5. Comment ça marche (appel, analyse offerte, installation, suivi mensuel)
+6. L'offre en échelle : Installation Rachat (une fois, analyse offerte), puis Suivi Rachat (490 $/mois) et Gestion Rachat (1 190 $/mois) si le client veut
 7. Qui est derrière
 8. FAQ
 9. Le même bouton
@@ -29,7 +29,7 @@ Puis ouvrir http://localhost:8000.
 
 ## À faire avant la mise en ligne
 
-- Remplacer tout ce qui est surligné en jaune, dans les 4 pages (accueil et politique de confidentialité, FR et EN) : garantie, ton histoire et ta photo, nom légal, NEQ, adresse postale, courriel, fournisseurs.
+- Remplacer tout ce qui est surligné en jaune (dont le prix de l'Installation Rachat), dans les 4 pages (accueil et politique de confidentialité, FR et EN) : garantie, ton histoire et ta photo, nom légal, NEQ, adresse postale, courriel, fournisseurs.
 - Faire relire la politique de confidentialité par un juriste.
 - Ne pas ajouter de Google Analytics, de pixel Meta ou de polices Google sans mettre à jour la politique (le site affirme n'utiliser aucun témoin ni outil de suivi).
 - Mettre le lien de réservation dans `RESERVATION` (index.html) et dans `BOOKING` (en/index.html).
