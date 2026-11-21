@@ -8,9 +8,9 @@ Une page, une promesse, un seul bouton (réserver un appel) :
 
 1. Titre qui dit le résultat, avec la cible nommée au-dessus
 1b. Pour qui : catégories, ses mots à lui, « c'est pour toi si » et « pas pour toi si »
-2. Ce qu'on met en place : la série de rachat (preuve concrète, marque fictive)
+2. Notre méthode : trouver le moment, parler au client, mesurer (les courriels sont un outil), avec l'exemple de la série après l'achat
 3. Avant / après
-4. Pourquoi nous (au bon moment, bilingue, mesure honnête, géré chaque mois)
+4. Pourquoi Revendo (au bon moment, bilingue, mesure honnête, géré chaque mois)
 5. Comment ça marche (analyse gratuite, appel, installation, appel de résultats à 30 jours)
 6. L'offre en échelle : analyse gratuite (vidéo de 5 min), Installation Rachat 790 $ (une fois), puis Suivi Rachat (490 $/mois) et Gestion Rachat (1 190 $/mois) si le client veut
 7. Qui est derrière
