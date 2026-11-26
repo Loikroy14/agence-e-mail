@@ -19,9 +19,24 @@
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/style.css?v=7">
+  <link rel="stylesheet" href="/assets/style.css?v=8">
 </head>
 <body>
+<div class="autre-langue" id="autre-langue" lang="fr" hidden>
+  <a href="/" hreflang="fr-CA">Ce site est aussi offert en français <span aria-hidden="true">→</span></a>
+  <button type="button" aria-label="Fermer">×</button>
+</div>
+<script>
+  // Propose l'autre langue si le navigateur la préfère. Aucune redirection, rien n'est enregistré.
+  (function () {
+    var langues = navigator.languages || [navigator.language || ""];
+    var premiere = (langues[0] || "").toLowerCase().slice(0, 2);
+    if (premiere !== "fr") return;
+    var b = document.getElementById("autre-langue");
+    b.hidden = false;
+    b.querySelector("button").onclick = function () { b.hidden = true; };
+  })();
+</script>
 
 <header class="entete">
   <div class="conteneur">
