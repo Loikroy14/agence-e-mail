@@ -398,3 +398,11 @@ html { scroll-padding-top: 80px; }
 @media (max-width: 560px) {
   .phase { margin-left: 0; margin-right: 0; padding: 24px 20px 26px; }
 }
+
+/* Bandeau discret : propose l'autre langue selon le navigateur (aucune redirection) */
+.autre-langue { display: flex; justify-content: center; align-items: center; gap: 14px; background: var(--vert); color: var(--creme); font-size: .88rem; padding: 8px 44px; position: relative; }
+.autre-langue[hidden] { display: none; }
+.autre-langue a { color: var(--creme); font-weight: 600; text-decoration: none; }
+.autre-langue a:hover { text-decoration: underline; }
+.autre-langue button { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: 0; color: var(--vert-doux); font-size: 1.2rem; line-height: 1; cursor: pointer; padding: 4px 8px; }
+.autre-langue button:hover { color: var(--creme); }
