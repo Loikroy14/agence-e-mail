@@ -19,7 +19,7 @@
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/style.css?v=6">
+  <link rel="stylesheet" href="/assets/style.css?v=7">
 </head>
 <body>
 
@@ -36,6 +36,7 @@
   <!-- 1. Titre qui dit le résultat, un seul bouton -->
   <section class="heros">
     <div class="conteneur">
+      <div class="heros-texte">
       <p class="etiquette">Rétention gérée pour les boutiques Shopify canadiennes</p>
       <h1>Tes clients achètent une fois. <em>On prend en charge ce qui les fait revenir.</em></h1>
       <p class="mene">Revendo gère une partie de ta stratégie de rétention : tes automatisations, tes campagnes ciblées, ta segmentation et l'analyse de tes résultats, en français et en anglais. Chaque mois, on mesure, on ajuste et on te présente la suite.</p>
@@ -43,6 +44,21 @@
       <ul class="faits">
         <li>Analyse gratuite de ta boutique</li><li>Français et anglais</li><li>Mise en place seulement si nécessaire</li><li>Prix publiés</li>
       </ul>
+      </div>
+      <div class="heros-visuel" aria-hidden="true">
+        <div class="carte-parcours">
+          <div class="cp-tete"><span class="cp-point"></span>Parcours après l'achat<span class="cp-marque">Atelier Sève</span></div>
+          <ol class="cp-liste">
+            <li class="cp-commande"><span class="cp-jour">Jour 0</span><span class="cp-txt"><b>Commande #1042</b>Julie · Sérum de nuit</span></li>
+            <li><span class="cp-jour">Jour 3</span><span class="cp-txt"><b>Conseils d'utilisation</b>Courriel</span><span class="cp-etat">Envoyé</span></li>
+            <li><span class="cp-jour">Jour 10</span><span class="cp-txt"><b>Demande d'avis</b>Courriel</span><span class="cp-etat">Envoyé</span></li>
+            <li class="cp-cle"><span class="cp-jour">Jour 28</span><span class="cp-txt"><b>Rappel de réachat</b>Calé sur le délai réel</span><span class="cp-etat">Envoyé</span></li>
+            <li class="cp-commande cp-retour"><span class="cp-jour">Jour 31</span><span class="cp-txt"><b>Commande #1187</b>2e commande</span></li>
+          </ol>
+          <div class="cp-pied"><span>Segment : nouvelles clientes</span><span>FR · EN</span></div>
+        </div>
+        <p class="cp-note">Exemple pour une marque fictive</p>
+      </div>
     </div>
   </section>
 
@@ -51,7 +67,7 @@
     <div class="conteneur">
       <p class="etiquette">Pour qui</p>
       <h2>Tu vends un produit qui se vide. Tes clients ne reviennent pas.</h2>
-      <p class="categories">Soins de la peau et du corps <span>/</span> Café et thé <span>/</span> Suppléments <span>/</span> Produits pour animaux <span>/</span> Produits ménagers naturels</p>
+      <p class="categories"><span>Soins de la peau et du corps</span><span>Café et thé</span><span>Suppléments</span><span>Produits pour animaux</span><span>Produits ménagers naturels</span></p>
       <div class="pour-qui">
         <div>
           <h3>Tu te reconnais ?</h3>
@@ -261,6 +277,7 @@
             <li><strong>1 optimisation</strong> par mois</li>
             <li>Rapport mensuel de performance</li>
             <li>Plan des prochaines actions</li>
+            <li>Sans engagement, mois par mois</li>
           </ul>
           <a class="bouton" href="#reserver">Réserver un appel</a>
         </article>
@@ -279,6 +296,7 @@
             <li>Rapport mensuel détaillé</li>
             <li>Plan stratégique du mois suivant</li>
             <li><strong>1 appel stratégique</strong> par mois</li>
+            <li>Sans engagement, mois par mois</li>
           </ul>
           <a class="bouton" href="#reserver">Réserver un appel</a>
         </article>
@@ -298,6 +316,7 @@
             <li>Analyse des performances par segment et par produit</li>
             <li>Rapport stratégique mensuel</li>
             <li><strong>2 appels stratégiques</strong> par mois</li>
+            <li>Sans engagement, mois par mois</li>
           </ul>
           <a class="bouton" href="#reserver">Réserver un appel</a>
         </article>
@@ -349,7 +368,7 @@
         </div>
       </div>
 
-      <p class="petit">Prix en dollars canadiens, taxes en sus. Les forfaits mensuels commencent par 3 mois, le temps que les réachats se voient dans tes chiffres, puis c'est mois par mois. Le délai de 10 jours ouvrables du Build commence à la réception de tes accès Klaviyo et Shopify et du questionnaire. Nos garanties : si le Build n'est pas fait dans les 10 jours ouvrables, on te rembourse 20 %. Si ton rapport mensuel n'arrive pas le 5, le mois suivant est offert. On garantit nos délais, pas un montant de ventes.</p>
+      <p class="petit">Prix en dollars canadiens, taxes en sus. Les forfaits mensuels sont sans engagement, mois par mois : tu peux arrêter à la fin de n'importe quel mois. Le délai de 10 jours ouvrables du Build commence à la réception de tes accès Klaviyo et Shopify et du questionnaire. Nos garanties : si le Build n'est pas fait dans les 10 jours ouvrables, on te rembourse 20 %. Si ton rapport mensuel n'arrive pas le 5, le mois suivant est offert. On garantit nos délais, pas un montant de ventes.</p>
     </div>
   </section>
 
@@ -381,7 +400,7 @@
         </details>
         <details>
           <summary>Est-ce que je dois m'engager longtemps ?</summary>
-          <p>L'analyse de ta boutique est gratuite et sans engagement. Le Build se paie une fois, seulement s'il est nécessaire. Les forfaits mensuels commencent par 3 mois, le temps que les réachats se voient dans tes chiffres, puis c'est mois par mois. Tu peux changer de forfait d'un mois à l'autre.</p>
+          <p>Non. L'analyse de ta boutique est gratuite et sans engagement. Le Build se paie une fois, seulement s'il est nécessaire. Les forfaits mensuels sont sans engagement, mois par mois : tu peux arrêter à la fin de n'importe quel mois. Tu peux changer de forfait d'un mois à l'autre.</p>
         </details>
         <details>
           <summary>Quel forfait choisir ?</summary>
