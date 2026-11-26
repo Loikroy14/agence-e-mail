@@ -210,3 +210,33 @@ img.photo { padding: 0; display: block; }
 .pilier li { padding: 6px 0; border-top: 1px solid var(--ligne); }
 .exemple-titre { margin-top: 64px; }
 @media (max-width: 900px) { .piliers { grid-template-columns: 1fr; gap: 28px; } }
+
+/* Offres : Phase 1 Build, Phase 2 Manage, options et périmètre */
+h4 { font-family: var(--titre); font-size: 1.1rem; font-weight: 600; line-height: 1.2; margin: 0 0 6px; }
+.phase { display: grid; grid-template-columns: 1fr 1fr; gap: 40px 56px; margin-top: 40px; padding: 28px 28px 30px; background: var(--papier); border-top: 1px solid var(--vert); }
+.phase-tete p:last-child { color: var(--doux); margin: 0; }
+.phase-num { font-size: .85rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--terra-fonce); margin: 0 0 8px; }
+.phase .prix small { white-space: normal; }
+.phase-liste { list-style: none; margin: 0; padding: 0; font-size: .95rem; columns: 1; }
+.phase-liste li { padding: 7px 0; border-top: 1px solid var(--ligne); }
+.phase-2 { margin-top: 64px; }
+.phase-titre { font-size: clamp(1.4rem, 2.6vw, 1.8rem); font-weight: 500; margin: 0 0 0; }
+.phase-2 + .phase-titre { margin-top: 0; }
+.options + .fondateurs, .forfaits + .phase-titre { margin-top: 56px; }
+.options { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 24px; border-top: 1px solid var(--vert); }
+.option { padding: 22px 28px 6px 0; }
+.option + .option { border-left: 1px solid var(--ligne); padding-left: 28px; }
+.option p { color: var(--doux); font-size: .95rem; margin: 0; }
+.prix-option { font-family: var(--titre); font-size: 1.6rem; line-height: 1.1; margin: 4px 0 10px; }
+.prix-option small { font-family: var(--corps); font-size: .85rem; color: var(--doux); }
+.fondateurs + .phase-titre { margin-top: 56px; }
+.perimetre { margin-top: 24px; }
+.perimetre p { font-size: .95rem; }
+@media (max-width: 900px) {
+  .phase, .options { grid-template-columns: 1fr; }
+  .phase { gap: 20px; }
+  .option + .option { border-left: 0; border-top: 1px solid var(--ligne); padding-left: 0; }
+}
+@media (max-width: 560px) {
+  .phase { padding: 24px 16px 26px; margin-left: -16px; margin-right: -16px; }
+}
