@@ -406,3 +406,35 @@ html { scroll-padding-top: 80px; }
 .autre-langue a:hover { text-decoration: underline; }
 .autre-langue button { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: none; border: 0; color: var(--vert-doux); font-size: 1.2rem; line-height: 1; cursor: pointer; padding: 4px 8px; }
 .autre-langue button:hover { color: var(--creme); }
+
+/* Palette v2 « blanc et vert » (27 nov. 2026) : fond blanc, vert forêt pour les boutons,
+   vert moyen comme couleur d'accent. Le logo ne change pas. */
+:root {
+  --creme: #FFFFFF;
+  --papier: #F5F7F5;
+  --blanc: #FFFFFF;
+  --ligne: #E2E6E3;
+  --terra: #2F6B4F;
+  --terra-fonce: #24563F;
+  --terra-pale: #E7F0EA;
+  --vert-doux: #BFCBC4;
+}
+.bouton { background: var(--vert); box-shadow: 0 6px 16px -8px rgba(20,38,31,.55); }
+.bouton:hover { background: #2C4A3E; }
+.entete { background: rgba(255,255,255,.92); border-bottom-color: rgba(226,230,227,.9); }
+/* Sur fond vert foncé, le bouton passe en blanc pour rester visible */
+.forfait.reco .bouton, .final .bouton { background: #FFFFFF; color: var(--vert); box-shadow: none; }
+.forfait.reco .bouton:hover, .final .bouton:hover { background: var(--terra-pale); }
+.forfait.reco .reco-mot { background: var(--terra-pale); color: var(--vert); }
+.forfait.reco li, .forfait.reco .prix small { color: #C9D6CF; }
+#pourquoi .liste-2 > div, #why .liste-2 > div { border-top-color: rgba(255,255,255,.18); }
+.forfait.reco li { border-top-color: rgba(255,255,255,.15); }
+.avant { border-color: #C5CEC8; }
+.photo { background: #E9EDEA; }
+
+/* Mobile : le bouton d'appel reste visible dans l'en-tête collant (tâche 1.4) */
+@media (max-width: 560px) {
+  .entete .conteneur { gap: 14px; }
+  .entete a.lien-appel { display: inline-block; background: var(--vert); color: #FFFFFF; box-shadow: none; padding: 8px 12px; font-size: .85rem; white-space: nowrap; }
+  .entete .langue { font-size: .85rem; }
+}
