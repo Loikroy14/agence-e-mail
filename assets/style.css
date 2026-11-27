@@ -431,3 +431,10 @@ html { scroll-padding-top: 80px; }
 .forfait.reco li { border-top-color: rgba(255,255,255,.15); }
 .avant { border-color: #C5CEC8; }
 .photo { background: #E9EDEA; }
+
+/* Mobile : le bouton d'appel reste visible dans l'en-tête collant (tâche 1.4) */
+@media (max-width: 560px) {
+  .entete .conteneur { gap: 14px; }
+  .entete a.lien-appel { display: inline-block; background: var(--vert); color: #FFFFFF; box-shadow: none; padding: 8px 12px; font-size: .85rem; white-space: nowrap; }
+  .entete .langue { font-size: .85rem; }
+}
