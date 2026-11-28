@@ -10,6 +10,19 @@
   <link rel="icon" href="/assets/img/favicon.ico" sizes="any">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/style.css?v=10">
+  <script>
+    // Au rechargement, on repart du haut de la page au lieu de revenir en bas.
+    (function () {
+      var nav = performance.getEntriesByType && performance.getEntriesByType("navigation")[0];
+      var recharge = nav ? nav.type === "reload" : (performance.navigation && performance.navigation.type === 1);
+      if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+      if (!recharge) return;
+      if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+      var haut = function () { window.scrollTo({ top: 0, left: 0, behavior: "instant" }); };
+      haut();
+      window.addEventListener("DOMContentLoaded", haut);
+    })();
+  </script>
 </head>
 <body>
 <header class="entete">
