@@ -27,16 +27,30 @@
   <link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/style.css?v=10">
   <script>
-    // Au rechargement, on repart du haut de la page au lieu de revenir en bas.
+    // Au rafraîchissement, on reste exactement à la même place sur la page.
     (function () {
+      var cle = "revendo-defilement:" + location.pathname;
       var nav = performance.getEntriesByType && performance.getEntriesByType("navigation")[0];
       var recharge = nav ? nav.type === "reload" : (performance.navigation && performance.navigation.type === 1);
       if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+      function lire() { try { return sessionStorage.getItem(cle); } catch (e) { return null; } }
+      function ecrire() { try { sessionStorage.setItem(cle, String(Math.round(window.scrollY))); } catch (e) {} }
+      window.addEventListener("pagehide", ecrire);
+      window.addEventListener("beforeunload", ecrire);
       if (!recharge) return;
+      var y = parseInt(lire(), 10);
+      if (isNaN(y)) return;
+      // L'ancre (#reserver, #forfaits...) ne doit pas nous déplacer au rafraîchissement.
       if (location.hash) history.replaceState(null, "", location.pathname + location.search);
-      var haut = function () { window.scrollTo({ top: 0, left: 0, behavior: "instant" }); };
-      haut();
-      window.addEventListener("DOMContentLoaded", haut);
+      var aller = function () {
+        var html = document.documentElement, avant = html.style.scrollBehavior;
+        html.style.scrollBehavior = "auto";
+        window.scrollTo(0, y);
+        html.style.scrollBehavior = avant;
+      };
+      aller();
+      window.addEventListener("DOMContentLoaded", aller);
+      window.addEventListener("load", function () { if (Math.abs(window.scrollY - y) > 2) aller(); });
     })();
   </script>
 </head>
